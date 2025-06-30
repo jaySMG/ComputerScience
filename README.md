@@ -12,7 +12,10 @@ It means to be open and honest with your team members.  Immediatly letting them 
 SNHU CS repository
 
 
-#Cs-230
+
+# ComputerScience
+# CS-230
+
 The Gaming Room client was a company seeking custom software tailored to manage and enhance their gaming facility operations. Specifically, they wanted software that could handle game reservations, track player statistics, and provide an intuitive interface for both staff and customers to interact with the gaming environment. Their goal was to streamline booking processes and improve user engagement through efficient and user-friendly features.
 
 In developing the documentation, I excelled at clearly outlining the software requirements and breaking down the functionalities into manageable components. This clarity helped ensure all stakeholders had a shared understanding of the project scope. Additionally, I created detailed user stories and diagrams that made the system architecture transparent and accessible, which was valuable during development.
