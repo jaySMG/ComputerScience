@@ -53,3 +53,33 @@ For testing, I used the Android Emulator and manually tried out all the features
 One challenge I ran into was getting the database to properly store and update information. At first, it wasn’t saving data the way I expected, but I worked through it by checking my code and testing each part until it worked correctly. That process pushed me to think more critically and problem-solve, which was a valuable learning experience.
 
 Overall, I think I did especially well with the core functionality of the app, specifically the ability to add, update, and delete inventory items. Getting those features to work smoothly showed that I understand how to connect the front end (what the user sees) with the back end (how the data is stored). That’s probably the part I’m most proud of, because it really brings the whole app toget
+
+#Computer Science
+#CS-370
+In this project, I developed a Deep Q-learning agent to solve a treasure-hunt maze. Foundational code was supplied, including environment setup and parts of the training loop. I designed and optimized critical agent components, implementing Q-learning, configuring neural network architectures, and calibrating parameters such as the exploration rate (epsilon), reward structure, and training duration.
+
+I applied experience replay and target networks to stabilize training, which required both programming skill and conceptual insight. I validated the agent’s performance by ensuring it consistently navigated the maze from varied starting points, achieving high win rates even under restricted scenarios.
+
+---
+
+Computer scientists play an essential role in solving challenging problems by designing efficient and intelligent systems, algorithms, and models. Their work matters because it drives innovation and shapes technology that impacts everyday life.
+
+Computer scientists address challenges by engineering systems, algorithms, and models for efficient and intelligent data processing. Here, I built an agent that learns autonomously rather than following explicit, stepwise instructions, reflecting computer science’s broader aims of developing adaptive, scalable solutions for complex environments.
+
+This work matters because these same principles underpin real-world applications such as robotics, autonomous vehicles, recommendation platforms, and game AI. By advancing learning and decision-making systems, computer scientists drive technologies that boost efficiency, automate workflows, and solve problems beyond human capacity.
+
+---
+
+As a computer scientist, I approach a problem by breaking it into smaller, manageable components and seeking patterns or strategies that inform potential solutions.
+
+I tackle problems by decomposing them into smaller, actionable segments and identifying applicable patterns or strategies. In this project, I first analyzed the agent’s interaction with the environment, then concentrated on learning mechanisms based on rewards and actions. I iteratively optimized the model by fine-tuning parameters and assessing outcomes.
+
+I emphasize experimentation and troubleshooting. For instance, finding the optimal balance between exploration and exploitation meant testing various epsilon values and assessing their impact on performance. This iterative cycle of building, evaluating, and refining is central to my problem-solving methodology.
+
+---
+
+Finally, I want to reflect on my ethical responsibilities as a computer scientist.
+
+As a computer scientist, I am obligated to ensure that the systems I create are dependable, equitable, and safeguard users and organizations. Although this project is a basic simulation, it highlights broader AI ethics, such as guaranteeing systems act predictably and avoid adverse outcomes.
+
+I am also responsible for ensuring system transparency and anticipating real-world implications. For example, reinforcement learning agents make decisions solely based on reward signals; carefully crafting those signals prevents harmful or skewed outcomes. Ethical responsibility means evaluating not only functionality but also societal and user impacts.
