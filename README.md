@@ -83,3 +83,50 @@ Finally, I want to reflect on my ethical responsibilities as a computer scientis
 As a computer scientist, I am obligated to ensure that the systems I create are dependable, equitable, and safeguard users and organizations. Although this project is a basic simulation, it highlights broader AI ethics, such as guaranteeing systems act predictably and avoid adverse outcomes.
 
 I am also responsible for ensuring system transparency and anticipating real-world implications. For example, reinforcement learning agents make decisions solely based on reward signals; carefully crafting those signals prevents harmful or skewed outcomes. Ethical responsibility means evaluating not only functionality but also societal and user impacts.
+
+#Computer Science
+#CS-330
+Reflection
+How do I approach designing software?
+
+When I design software, I start by understanding the project's requirements and breaking them into smaller, manageable tasks. For this project, I planned out the overall layout of my 3D scene before writing code. This helped me think about how each object would fit together and what features I needed to implement. I also learned that spending time planning at the beginning saves time later when making changes or fixing problems.
+
+What new design skills has your work on the project helped you to craft?
+
+This project helped me improve my ability to design 3D environments using basic geometric shapes, textures, lighting, and camera positioning. I also gained experience thinking about how visual elements work together to create a realistic scene. Learning how lighting, materials, and object placement affect the final appearance gave me a better understanding of graphical design principles.
+
+What design process did you follow for your project work?
+
+I followed an iterative design process. I first created the basic objects that made up the scene, then positioned and scaled them correctly. After that, I added textures, lighting, and camera controls. Throughout each milestone, I tested the scene, made adjustments, and refined the overall appearance until it matched my original vision as closely as possible.
+
+How could tactics from your design approach be applied in future work?
+
+The planning and iterative approach I used can be applied to future software projects of any size. Breaking large problems into smaller tasks makes development more manageable and helps identify issues earlier. Regular testing and making gradual improvements also lead to higher-quality software.
+
+How do I approach developing programs?
+
+I approach programming by building one feature at a time and testing each addition before moving on. Instead of trying to complete everything at once, I focus on making sure each part works correctly before integrating it into the larger project. This approach makes debugging much easier and helps reduce errors.
+
+What new development strategies did you use while working on your 3D scene?
+
+One strategy I developed was organizing my code into reusable functions and classes rather than placing everything in one file. I also learned to reuse transformations and textures across multiple objects, making the project easier to maintain. Experimenting with different lighting values and camera positions also helped me understand how small changes can greatly improve the final result.
+
+How did iteration factor into your development?
+
+Iteration was one of the most important parts of this project. Every milestone gave me the opportunity to improve my scene by fixing bugs, adjusting object placement, improving textures, and refining the lighting. Instead of expecting everything to work perfectly the first time, I continually tested and improved my work until I was satisfied with the results.
+
+How has your approach to developing code evolved throughout the milestones, which led you to the project's completion?
+
+As I completed each milestone, I became more confident in reading, organizing, and modifying OpenGL code. Early in the project I relied heavily on the provided examples, but by the end I was much more comfortable making my own changes, troubleshooting problems, and understanding how the different components worked together. My code also became more organized and easier to maintain as I gained experience.
+
+How can computer science help me in reaching my goals?
+
+Computer science provides valuable problem-solving and technical skills that can be applied in many different careers. As a Field Technician II, improving my programming knowledge helps me better understand the technology I work with and opens opportunities for future advancement into software development, systems engineering, or other technical roles. It also strengthens my ability to analyze problems and develop efficient solutions.
+
+How do computational graphics and visualizations give you new knowledge and skills that can be applied in your future educational pathway?
+
+Computational graphics introduced me to concepts such as coordinate systems, transformations, lighting models, textures, shaders, and camera movement. These skills provide a strong foundation for future courses involving game development, simulation, computer vision, and advanced graphics programming. The project also strengthened my understanding of mathematics and spatial reasoning.
+
+How do computational graphics and visualizations give you new knowledge and skills that can be applied in your future professional pathway?
+
+The knowledge I gained from this course extends beyond graphics programming. Developing a complete 3D application improved my programming, debugging, and problem-solving skills while teaching me how multiple software components interact within a larger system. These experiences will be valuable in many technical careers, including software development, visualization, engineering, simulation, and any role that requires designing or maintaining complex software systems.
