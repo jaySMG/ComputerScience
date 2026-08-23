@@ -130,3 +130,17 @@ Computational graphics introduced me to concepts such as coordinate systems, tra
 How do computational graphics and visualizations give you new knowledge and skills that can be applied in your future professional pathway?
 
 The knowledge I gained from this course extends beyond graphics programming. Developing a complete 3D application improved my programming, debugging, and problem-solving skills while teaching me how multiple software components interact within a larger system. These experiences will be valuable in many technical careers, including software development, visualization, engineering, simulation, and any role that requires designing or maintaining complex software systems.
+
+#CS-340 (part 2!)
+Grazioso Salvare Dashboard
+How do you write programs that are maintainable, readable, and adaptable?
+
+I try to keep my programs organized by separating different parts of the code based on what they are responsible for. In this project, the CRUD Python module handled the database operations separately from the dashboard. This made the code easier to read and allowed me to reuse the same module from Project One when building Project Two. In the future, I could reuse a similar CRUD module for another dashboard or application that needs to connect to MongoDB.
+
+How do you approach a problem as a computer scientist?
+
+I usually start by figuring out exactly what the program needs to accomplish and then break the problem into smaller pieces. For Grazioso Salvare, I had to understand what types of rescue dogs they were looking for and then determine how to filter the database to find those animals. After that, I connected the database queries to the dashboard and its different components. This project felt more like solving a real-world problem because I had to think about what the client needed instead of only focusing on whether the code worked.
+
+What do computer scientists do, and why does it matter?
+
+Computer scientists use programming and technology to solve problems and make tasks more efficient. This project is a good example because Grazioso Salvare could potentially have thousands of animal records to search through. The dashboard makes it easier to filter that information and identify dogs that may be good candidates for search-and-rescue training. Projects like this show how software can turn a large amount of data into something useful and help an organization make decisions more efficiently.
