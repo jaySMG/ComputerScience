@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jason Guiste | Computer Science ePortfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1f2937;
+      color: white;
+      padding: 55px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.7rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #d1d5db;
+    }
+
+    nav {
+      background-color: #111827;
+      text-align: center;
+      padding: 14px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 35px 20px;
+    }
+
+    section {
+      background-color: white;
+      margin-bottom: 25px;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      color: #1f2937;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      color: #374151;
+    }
+
+    .artifact-card {
+      background-color: #f9fafb;
+      border-left: 5px solid #374151;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .coming-soon {
+      font-style: italic;
+      color: #6b7280;
+    }
+
+    footer {
+      background-color: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 22px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Jason Guiste</h1>
+    <p>Computer Science ePortfolio</p>
+    <p>Southern New Hampshire University</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#self-assessment">Self-Assessment</a>
+    <a href="#code-review">Code Review</a>
+    <a href="#artifacts">Artifacts</a>
+  </nav>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+
+      <p>
+        My name is Jason Guiste, and I am completing my bachelor's degree in
+        Computer Science at Southern New Hampshire University. Throughout the
+        program, I have gained experience in software development, databases,
+        algorithms and data structures, mobile development, computer graphics,
+        and software security.
+      </p>
+
+      <p>
+        My professional interests are especially focused on cybersecurity.
+        Through this ePortfolio, I plan to demonstrate the skills I have
+        developed during the program and show how I can take an existing
+        software project and improve its design, efficiency, database
+        functionality, and security.
+      </p>
+
+      <p>
+        For my capstone project, I selected my Grazioso Salvare Rescue Animal
+        Dashboard from CS 340 as my main artifact. I chose this project because
+        it combines several areas of computer science and gives me the
+        opportunity to make meaningful improvements in all three required
+        enhancement categories.
+      </p>
+    </section>
+
+
+    <section id="self-assessment">
+      <h2>Professional Self-Assessment</h2>
+
+      <p class="coming-soon">
+        This section will be completed during the final stages of the capstone
+        course. It will provide an overall reflection on my growth throughout
+        the Computer Science program, the skills demonstrated in this
+        ePortfolio, and my professional goals.
+      </p>
+    </section>
+
+
+    <section id="code-review">
+      <h2>Code Review</h2>
+
+      <p>
+        The code review will examine the original Grazioso Salvare Rescue Animal
+        Dashboard before the capstone enhancements are completed. The review
+        will discuss the current functionality of the application, areas that
+        can be improved, and the changes I plan to make during the capstone.
+      </p>
+
+      <p class="coming-soon">
+        Code review video will be added during Module Two.
+      </p>
+    </section>
+
+
+    <section id="artifacts">
+      <h2>Capstone Artifact</h2>
+
+      <div class="artifact-card">
+        <h3>Original Artifact: Grazioso Salvare Rescue Animal Dashboard</h3>
+
+        <p>
+          The Grazioso Salvare Rescue Animal Dashboard was originally created
+          for CS 340: Client/Server Development. The application uses Python,
+          Dash, MongoDB, PyMongo, Pandas, Plotly, and Dash Leaflet.
+        </p>
+
+        <p>
+          The dashboard allows a user to view animal shelter records, filter
+          animals based on different rescue categories, review breed
+          information, and display the location of a selected animal on an
+          interactive map.
+        </p>
+      </div>
+
+
+      <div class="artifact-card">
+        <h3>Enhancement One: Software Design and Engineering</h3>
+
+        <p>
+          For the software design and engineering enhancement, I plan to
+          reorganize and refactor the application into a cleaner and more
+          modular structure. I will separate major parts of the application
+          based on their responsibilities and improve error handling,
+          configuration management, documentation, and testing.
+        </p>
+
+        <p>
+          I also plan to improve security by removing database credentials from
+          the source code and loading them through a safer configuration method.
+        </p>
+
+        <p class="coming-soon">
+          Enhanced artifact and narrative will be added during Module Three.
+        </p>
+      </div>
+
+
+      <div class="artifact-card">
+        <h3>Enhancement Two: Algorithms and Data Structures</h3>
+
+        <p>
+          For the algorithms and data structures enhancement, I plan to create
+          a rescue-candidate scoring system. Instead of only filtering animals,
+          the application will evaluate candidate records and assign a
+          suitability score based on characteristics connected to a selected
+          rescue type.
+        </p>
+
+        <p>
+          The candidates will then be ranked from strongest to weakest match.
+          This enhancement will demonstrate algorithm design, sorting,
+          filtering, data structures, and evaluation of design trade-offs.
+        </p>
+
+        <p class="coming-soon">
+          Enhanced artifact and narrative will be added during Module Four.
+        </p>
+      </div>
+
+
+      <div class="artifact-card">
+        <h3>Enhancement Three: Databases</h3>
+
+        <p>
+          For the database enhancement, I plan to expand the MongoDB portion of
+          the project by improving queries and making greater use of database
+          functionality. This may include MongoDB aggregation pipelines,
+          indexing, improved CRUD operations, and safer database interaction.
+        </p>
+
+        <p>
+          I will also review how the application handles database credentials
+          and user input so that the final project demonstrates a stronger
+          security mindset.
+        </p>
+
+        <p class="coming-soon">
+          Enhanced artifact and narrative will be added during Module Five.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>Jason Guiste | Computer Science ePortfolio | SNHU</p>
+  </footer>
+
+</body>
+
+</html>
