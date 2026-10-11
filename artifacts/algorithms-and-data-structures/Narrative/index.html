@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Algorithms and Data Structures Narrative | Computer Science ePortfolio</title>
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f6f8;color:#222;line-height:1.7}
+header{background:#1f2937;color:white;padding:42px 20px;text-align:center}
+header h1{margin:0;font-size:2rem}header p{color:#d1d5db}
+nav{background:#111827;padding:14px;text-align:center}nav a{color:white;margin:0 12px;text-decoration:none;font-weight:bold}nav a:hover{text-decoration:underline}
+main{max-width:900px;margin:30px auto;padding:0 20px}
+article{background:white;border-radius:8px;padding:35px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+h2{color:#1f2937;border-bottom:2px solid #e5e7eb;padding-bottom:8px;margin-top:30px}
+a{color:#1d4ed8}.links{background:#f9fafb;border-left:5px solid #374151;padding:16px;margin:20px 0}.links a{display:inline-block;margin:4px 16px 4px 0}
+footer{background:#1f2937;color:white;text-align:center;padding:20px;margin-top:35px}
+@media(max-width:600px){article{padding:20px}header h1{font-size:1.6rem}}
+</style>
+</head>
+<body>
+<header><h1>Enhancement Two: Algorithms and Data Structures</h1><p>CS 499 Milestone Three Narrative · Grazioso Salvare Rescue Animal Dashboard</p></header>
+<nav><a href="../../../index.html#artifacts">Back to ePortfolio</a><a href="../Enhanced/">Enhanced Code</a><a href="../Original/">Original Artifact</a></nav>
+<main><article>
+<p><strong>Jason Guiste</strong><br>Southern New Hampshire University<br>CS 499 Computer Science Capstone</p>
+<div class="links"><strong>Artifact resources</strong><div>
+<a href="../Original/">Original CS 340 files</a>
+<a href="../Enhanced/">Enhanced code and tests</a>
+<a href="../Enhanced/candidate_scoring.py">Candidate scoring algorithm</a>
+<a href="./">Narrative folder / Word document</a>
+</div></div>
+<h2>Artifact Description</h2>
+<p>The artifact I selected is the Grazioso Salvare Rescue Animal Dashboard that I originally created in CS 340 Client/Server Development. The application uses Python, Dash, Pandas, Plotly, Dash Leaflet, and MongoDB to work with animal shelter records from the Austin Animal Center dataset. The original dashboard allowed a user to select different rescue categories, filter the animal records, view breed information in a chart, and display the selected animal on a map.</p>
+<p>I selected this artifact because it gave me a useful starting point for showing how an existing application can be improved instead of building a completely separate program. The original project already worked with a large collection of animal records, so it was a good fit for adding an algorithm that could evaluate those records and make the results more useful.</p>
+<h2>Justification and Algorithms/Data Structures Enhancement</h2>
+<p>The main improvement for this milestone was changing the dashboard from only filtering animals to also evaluating and ranking rescue candidates. In the original version, an animal either matched the MongoDB filter or it did not. That was useful for narrowing down the dataset, but it did not provide any way to compare candidates that met different parts of the desired rescue criteria.</p>
+<p>I added a separate candidate_scoring.py module that calculates a suitability score for an animal based on the selected rescue type. The algorithm evaluates characteristics such as breed, sex, and age and assigns weighted points when an animal matches the preferred characteristics. The resulting records are then filtered so animals with a score of zero are removed and the remaining candidates are sorted from the highest suitability score to the lowest. The dashboard displays the calculated Suitability Score with the animal records so the ranking is visible to the user.</p>
+<p>This enhancement demonstrates algorithms and data structures because the program now performs more than a database lookup. Animal records are represented with Python dictionaries and processed as a list of records. The scoring function evaluates the values stored in each dictionary, calculates a numeric score, and the ranking function organizes the resulting list using that score. I also made sure the ranking process does not modify the original animal records. Instead, the algorithm works with copies when it adds the suitability score.</p>
+<p>There were design trade-offs involved in this approach. A weighted scoring system is easy to understand, test, and adjust, which makes it appropriate for this application. It is also more flexible than requiring every animal to exactly match every condition. At the same time, the weights are rules defined by the application rather than a predictive model, so the scores should be treated as a way to organize candidates rather than as an absolute judgment. This was a reasonable trade-off because the goal of the enhancement was to demonstrate algorithmic decision making while keeping the behavior transparent.</p>
+<p>I also expanded automated testing as part of this work. The project now has 24 passing tests. The tests cover rescue-filter behavior, candidate scoring and ranking, visualization behavior, and mocked database CRUD interactions. The database tests use mocks instead of changing the real MongoDB collection. This also responds to instructor feedback to continue expanding automated testing to visualization and database interaction behaviors.</p>
+<h2>Course Outcomes</h2>
+<p>This enhancement made the strongest progress toward the course outcome involving the design and evaluation of computing solutions using algorithmic principles and computer science practices while considering design trade-offs. The weighted scoring and ranking system required me to decide how the animal data should be represented, how individual characteristics should contribute to a score, how candidates should be filtered, and how the final records should be ordered.</p>
+<p>The enhancement also continued to support the outcome involving the use of well-founded computing techniques and tools to deliver value. Separating the scoring logic into its own module made the algorithm easier to test and maintain, while pytest gave me a repeatable way to verify the expected behavior. The additional visualization and mocked database tests also improved confidence that changes to one part of the application do not silently break another part.</p>
+<p>I also continued making progress toward the security outcome. Credentials remain outside the source code in environment variables, and the automated database tests use mocked interactions instead of performing create, update, or delete operations against the real dataset. My overall outcome-coverage plan has not changed. Later enhancements will place more emphasis on the database category, while the final ePortfolio will bring the different outcomes together.</p>
+<h2>Reflection on the Enhancement Process</h2>
+<p>The biggest thing I learned from this enhancement was the difference between filtering data and actually ranking it. The original dashboard could find animals that matched a set of MongoDB conditions, but that did not mean it was evaluating which candidates were the strongest matches. Adding a scoring algorithm required me to think about how multiple characteristics could be represented numerically and how the results should be sorted in a useful way.</p>
+<p>One challenge was making sure the new algorithm worked correctly inside the existing dashboard without breaking the features that were already working. I kept the scoring logic in a separate module and tested it independently before relying on it in the notebook. I also tested that ranking did not change the original records. During integration, I found that the notebook could continue using an older imported version of the scoring module after the Python file had been changed. Restarting the notebook kernel and running all cells reloaded the updated module and confirmed that zero-score candidates were being removed correctly. The lowest remaining viable score in the tested Water Rescue results was 20.</p>
+<p>Testing became a larger part of the enhancement than it was in the original project. The automated test suite grew to 24 passing tests. In addition to checking the new scoring and ranking behavior, I added tests for the visualization functions and mocked MongoDB CRUD operations. This helped me address the instructor feedback while also showing me how automated tests can protect existing functionality while an application continues to change.</p>
+<p>Overall, this enhancement improved the usefulness of the artifact without replacing its original purpose. The dashboard still allows the user to filter, inspect, visualize, and map animal records, but it can now also evaluate viable rescue candidates and place them in a meaningful order. That makes the application a stronger example of my ability to apply algorithms and data structures to an existing software system.</p>
+<p>After receiving instructor feedback, I improved the documentation of my candidate scoring algorithm to explain why each characteristic receives its assigned weight. Breed receives 50 points because it is the primary matching characteristic in the rescue profiles, while age receives 30 points and sex receives 20 points. These weights are design choices intended to make the original filtering criteria more useful for ranking candidates, rather than scientifically validated measures of rescue ability. Documenting this distinction helped me better understand the importance of making algorithmic decisions transparent and explaining the reasoning behind them.</p>
+</article></main>
+<footer>Computer Science ePortfolio | SNHU</footer>
+</body></html>
