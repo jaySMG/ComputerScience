@@ -214,49 +214,206 @@
       </div>
 
 
-      <div class="artifact-card">
-        <h3>Enhancement One: Software Design and Engineering</h3>
+      
+<div class="artifact-card">
+  <h3>Enhancement One: Software Design and Engineering</h3>
 
-        <p>
-          For the software design and engineering enhancement, I plan to
-          reorganize and refactor the application into a cleaner and more
-          modular structure. I will separate major parts of the application
-          based on their responsibilities and improve error handling,
-          configuration management, documentation, and testing.
-        </p>
+  <p>
+    For my software design and engineering enhancement, I
+    refactored the Grazioso Salvare Rescue Animal Dashboard
+    to improve its organization, maintainability, reliability,
+    and security.
+  </p>
 
-        <p>
-          I also plan to improve security by removing database credentials from
-          the source code and loading them through a safer configuration method.
-        </p>
+  <h4>Software Architecture Improvements</h4>
 
-        <p class="coming-soon">
-          Enhanced artifact and narrative will be added during Module Three.
-        </p>
-      </div>
+  <p>
+    The original application contained several responsibilities
+    within a single Jupyter notebook. I reorganized the
+    application into separate Python modules, each responsible
+    for a specific part of the system.
+  </p>
+
+  <ul>
+    <li>
+      <strong>animal_shelter.py:</strong>
+      Handles MongoDB database operations and error handling.
+    </li>
+    <li>
+      <strong>rescue_filters.py:</strong>
+      Defines the rescue-category filtering rules.
+    </li>
+    <li>
+      <strong>visualization.py:</strong>
+      Creates the breed chart and geographic map.
+    </li>
+    <li>
+      <strong>Dashboard notebook:</strong>
+      Manages the user interface and connects the components.
+    </li>
+  </ul>
+
+  <h4>Security and Reliability</h4>
+
+  <p>
+    I improved configuration management by separating database
+    connection settings from the application source code.
+    Environment variables allow configuration values to be
+    managed without hardcoding them into the program.
+  </p>
+
+  <p>
+    I also improved input validation, exception handling,
+    and automated testing. These changes make the application
+    easier to maintain and help identify problems before they
+    affect the dashboard.
+  </p>
+
+  <h4>Skills Demonstrated</h4>
+
+  <p>
+    This enhancement demonstrates modular software design,
+    separation of concerns, database integration, testing,
+    configuration management, and secure development practices.
+    It also provided the foundation for the later algorithm
+    and database enhancements.
+  </p>
+
+  <h4>Course Outcomes Demonstrated</h4>
+
+  <p>
+    This enhancement supports the course outcomes involving
+    software engineering practices, implementing computing
+    solutions that deliver value, and developing a security
+    mindset that anticipates vulnerabilities and protects
+    application resources.
+  </p>
+</div>
 
 
-      <div class="artifact-card">
-        <h3>Enhancement Two: Algorithms and Data Structures</h3>
 
-        <p>
-          For the algorithms and data structures enhancement, I plan to create
-          a rescue-candidate scoring system. Instead of only filtering animals,
-          the application will evaluate candidate records and assign a
-          suitability score based on characteristics connected to a selected
-          rescue type.
-        </p>
+      
+<div class="artifact-card">
+  <h3>Enhancement Two: Algorithms and Data Structures</h3>
 
-        <p>
-          The candidates will then be ranked from strongest to weakest match.
-          This enhancement will demonstrate algorithm design, sorting,
-          filtering, data structures, and evaluation of design trade-offs.
-        </p>
+  <p>
+    For my algorithms and data structures enhancement, I expanded
+    the Grazioso Salvare Rescue Animal Dashboard by implementing
+    a weighted rescue-candidate scoring and ranking system.
+    Instead of simply filtering animal records, the enhanced
+    application evaluates how closely each animal matches the
+    characteristics associated with a selected rescue category.
+  </p>
 
-        <p class="coming-soon">
-          Enhanced artifact and narrative will be added during Module Four.
-        </p>
-      </div>
+  <h4>Weighted Candidate Scoring</h4>
+
+  <p>
+    The scoring algorithm evaluates three characteristics:
+  </p>
+
+  <ul>
+    <li>
+      <strong>Breed compatibility (50 points):</strong>
+      Breed receives the greatest weight because it is the
+      primary matching characteristic in the rescue profiles.
+    </li>
+
+    <li>
+      <strong>Preferred age range (30 points):</strong>
+      Age receives the second-highest weight because the
+      original rescue criteria identify preferred age ranges
+      for different rescue assignments.
+    </li>
+
+    <li>
+      <strong>Sex preference (20 points):</strong>
+      This criterion preserves the preferences defined in the
+      original rescue profiles while assigning them the
+      lowest weight.
+    </li>
+  </ul>
+
+  <p>
+    These weights are project-specific design choices rather
+    than scientifically validated measures of an animal's
+    actual rescue ability.
+  </p>
+
+  <h4>Ranking and Algorithm Design</h4>
+
+  <p>
+    Each candidate receives a suitability score of up to
+    100 points. Candidates that do not match any of the
+    preferred characteristics are excluded, while the
+    remaining candidates are sorted from highest to lowest
+    score.
+  </p>
+
+  <p>
+    The algorithm uses Python dictionaries, lists, filtering,
+    and sorting to organize candidate records. It also
+    creates copies of the records so that the original
+    animal data is not modified during scoring.
+  </p>
+
+  <h4>Testing and Instructor Feedback</h4>
+
+  <p>
+    I verified the scoring and ranking functionality through
+    automated testing and manual dashboard testing.
+    The completed capstone application passed 30 automated
+    tests across its database, filtering, scoring, and
+    visualization components.
+  </p>
+
+  <p>
+    Following instructor feedback, I expanded the algorithm's
+    documentation to explain why each characteristic receives
+    its assigned weight. This makes the scoring decisions
+    easier to understand, evaluate, and adjust.
+  </p>
+
+  <h4>Original and Enhanced Artifacts</h4>
+
+  <p>
+    <a href="https://github.com/jaySMG/ComputerScience/tree/main/artifacts/algorithms-and-data-structures/Original"
+       target="_blank" rel="noopener noreferrer">
+      View Original CS 340 Artifact
+    </a>
+  </p>
+
+  <p>
+    <a href="https://github.com/jaySMG/ComputerScience/tree/main/artifacts/algorithms-and-data-structures/Enhanced"
+       target="_blank" rel="noopener noreferrer">
+      View Enhanced Source Code and Tests
+    </a>
+  </p>
+
+  <p>
+    <a href="https://github.com/jaySMG/ComputerScience/blob/main/artifacts/algorithms-and-data-structures/Enhanced/candidate_scoring.py"
+       target="_blank" rel="noopener noreferrer">
+      View Candidate Scoring Algorithm
+    </a>
+  </p>
+
+  <p>
+    <a href="https://github.com/jaySMG/ComputerScience/tree/main/artifacts/algorithms-and-data-structures/Narrative"
+       target="_blank" rel="noopener noreferrer">
+      View Milestone Three Enhancement Narrative
+    </a>
+  </p>
+
+  <h4>Course Outcomes Demonstrated</h4>
+
+  <p>
+    This enhancement demonstrates my ability to design and
+    evaluate computing solutions using algorithmic principles,
+    apply appropriate data structures, consider design
+    trade-offs, and implement solutions that provide value
+    through more informative rescue-candidate evaluation.
+  </p>
+</div>
+
 
 
       <div class="artifact-card">
