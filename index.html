@@ -361,6 +361,61 @@
 </div>
 <div class="artifact-card"><h3>Enhancement Three: Databases</h3><p>For my database enhancement, I improved the MongoDB functionality of the Grazioso Salvare Rescue Animal Dashboard by introducing database-side aggregation, explicit index-management methods, and expanded automated tests.</p><h4>MongoDB Aggregation and Visualization</h4><p>I added a MongoDB aggregation pipeline that matches the relevant animal records, groups them by breed, and sorts the breed counts. The dashboard uses the resulting counts for its breed chart while keeping the chart tied to the currently filtered animal records.</p><h4>Index Management and Security</h4><p>I added methods for creating and inspecting indexes on fields used in rescue queries, including animal type, breed, sex, and age. Index creation is an explicit administrative action rather than an automatic dashboard startup operation. Database credentials are loaded from environment variables instead of being embedded in the source code.</p><h4>Testing and Design Trade-Offs</h4><p>The completed application passed 30 automated tests covering database behavior, filtering, candidate scoring, and visualization. Mocked database tests verify aggregation and index methods without modifying live records. The visualization also retains a fallback path if aggregated results are unavailable. The project demonstrates indexing functionality but does not claim measured performance improvements or deployment of indexes to a production database.</p><h4>Skills and Course Outcomes Demonstrated</h4><p>This enhancement demonstrates database design, MongoDB aggregation, indexing, Python database integration, automated testing, and the evaluation of where data processing should occur. It supports the course outcomes involving computing tools that deliver value, algorithmic design trade-offs, and a security mindset.</p><h4>Original and Enhanced Artifacts</h4><p><a href="https://github.com/jaySMG/ComputerScience/tree/main/artifacts/databases/Original" rel="noopener noreferrer" target="_blank">View Original CS 340 Artifact</a></p><p><a href="https://github.com/jaySMG/ComputerScience/tree/main/artifacts/databases/Enhanced" rel="noopener noreferrer" target="_blank">View Enhanced Source Code and Tests</a></p><p><a href="artifacts/databases/Narrative/" rel="noopener noreferrer" target="_blank">Read Milestone Four Enhancement Narrative</a></p><p><a href="artifacts/databases/Narrative/Jason_Guiste_CS499_Milestone_Four_Narrative.docx" rel="noopener noreferrer" target="_blank">Download Milestone Four Narrative (Word)</a></p></div>
 </section>
+
+    <section id="professional-reflection">
+      <h2>Professional Reflection and Future Goals</h2>
+
+      <p>
+        Completing my Computer Science degree at Southern New Hampshire
+        University has given me the opportunity to build on the technical
+        experience I have gained throughout my professional career.
+        Working as a Field Technician II at CompuCom has provided me
+        with hands-on experience in networking, troubleshooting, system
+        configuration, and supporting technology in real business
+        environments. My coursework has helped me better understand
+        the software, databases, algorithms, and security principles
+        behind the systems I work with.
+      </p>
+
+      <p>
+        One of the most valuable lessons from my capstone project was
+        learning how to approach an existing application as a software
+        engineer rather than simply as a programmer. Through the three
+        enhancements to my Grazioso Salvare Rescue Animal Dashboard,
+        I improved the application's structure, introduced more
+        meaningful data processing, strengthened database functionality,
+        and expanded automated testing. Each enhancement required me
+        to evaluate the existing design, make informed decisions,
+        and verify that the changes worked as intended.
+      </p>
+
+      <p>
+        As I move forward in my career, my goal is to transition into
+        cybersecurity while continuing to develop my knowledge of
+        software engineering, networking, and secure systems. I believe
+        my combination of professional IT experience and academic
+        training provides a strong foundation for that transition.
+      </p>
+
+      <p>
+        This ePortfolio represents more than the completion of my degree.
+        It demonstrates my ability to learn new technologies, improve
+        existing systems, solve technical problems, and apply computer
+        science principles to practical challenges. These are skills
+        I intend to continue developing throughout my career.
+      </p>
+
+      <h3>Professional Links</h3>
+
+      <p>
+        <a href="https://github.com/jaySMG"
+           target="_blank"
+           rel="noopener noreferrer">
+          View My GitHub Profile
+        </a>
+      </p>
+    </section>
+
 </main>
 <footer>
 <p>Jason Guiste | Computer Science ePortfolio | SNHU</p>
